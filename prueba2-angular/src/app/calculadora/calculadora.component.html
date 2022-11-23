@@ -1,0 +1,157 @@
+<p>calculadora works!</p>
+
+<div class="container">
+  <div class="row align-items-center">
+    <div
+      class="col-12 col-md colBox d-flex justify-content-center d-flex align-items-center"
+    >
+      <div class="calc">
+        <div class="calc-input">
+          <input
+            type="text"
+            placeholder="0.00"
+            class="form-control"
+            readonly
+            id="pantalla"
+          />
+        </div>
+        <div class="guarda" id="memoria"></div>
+        <div class="fila">
+          <button
+            type="button"
+            id="btn1"
+            class="btn btn-success boton"
+            (click)="recoge(1)"
+          >
+            1</button
+          ><button
+            type="button"
+            id="btn2"
+            class="btn btn-success boton"
+            (click)="recoge(2)"
+          >
+            2</button
+          ><button
+            type="button"
+            id="btn3"
+            class="btn btn-success boton"
+            (click)="recoge(3)"
+          >
+            3</button
+          ><button
+            type="button"
+            id="btn+"
+            class="btn btn-success boton"
+            (click)="recoge('+')"
+          >
+            +
+          </button>
+        </div>
+        <div class="fila">
+          <button
+            type="button"
+            id="btn4"
+            (click)="recoge(4)"
+            class="btn btn-success boton"
+          >
+            4</button
+          ><button
+            type="button"
+            id="btn5"
+            (click)="recoge(5)"
+            class="btn btn-success boton"
+          >
+            5</button
+          ><button
+            type="button"
+            id="btn6"
+            (click)="recoge(6)"
+            class="btn btn-success boton"
+          >
+            6</button
+          ><button
+            type="button"
+            id="btn-"
+            (click)="recoge('-')"
+            class="btn btn-success boton"
+          >
+            -
+          </button>
+        </div>
+        <div class="fila">
+          <button
+            type="button"
+            id="btn7"
+            (click)="recoge(7)"
+            class="btn btn-success boton"
+          >
+            7</button
+          ><button
+            type="button"
+            id="btn8"
+            (click)="recoge(8)"
+            class="btn btn-success boton"
+          >
+            8</button
+          ><button
+            type="button"
+            id="btn9"
+            (click)="recoge(9)"
+            class="btn btn-success boton"
+          >
+            9</button
+          ><button
+            type="button"
+            id="btn*"
+            (click)="recoge('*')"
+            class="btn btn-success boton"
+          >
+            *
+          </button>
+        </div>
+        <div class="fila">
+          <button
+            type="button"
+            id="btn0"
+            (click)="recoge(0)"
+            class="btn btn-success boton1"
+          >
+            0</button
+          ><button
+            type="button"
+            id="btn."
+            (click)="recoge('.')"
+            class="btn btn-success boton"
+          >
+            .</button
+          ><button
+            type="button"
+            id="btn/"
+            (click)="recoge('/')"
+            class="btn btn-success boton"
+          >
+            /
+          </button>
+        </div>
+        <div class="fila">
+          <button
+            type="button"
+            id="btnc"
+            (click)="recoge('c')"
+            class="btn btn-success boton1"
+          >
+            C
+          </button>
+          <button
+            type="button"
+            id="btn="
+            (click)="recoge('=')"
+            class="btn btn-success boton1"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
